@@ -52,7 +52,14 @@ export default {
     box-shadow: 0 2px 6px 0 rgba(53, 53, 54, 0.25);
 }
 .cta-action {
-    width: 180px;
+    color: #ff5300;
+    width: 150px;
     height: 40px;
+    background-color: #fff;
+    border: 1px solid #ff5300;
+}
+.cta-action:hover {
+    color: #fff;
+    background-color: #ff5300;
 }
 </style>

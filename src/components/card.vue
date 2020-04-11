@@ -4,20 +4,21 @@
             <img :src="displayItem.url" width="200px" />
         </div>
         <div class="card-body">
-            <div>{{displayItem.name}}</div>
-            <button class="btn btn-success" @click="AddCart" v-if="!AddCartStatus">Add to Cart</button>
+            <h4>{{displayItem.name}}</h4>
+            <button class="btn btn-default cta-action" @click="AddCart" v-if="!AddCartStatus">Add to Cart</button>
             <div class="add-remove-cart" v-else>
-                
-                <button class="btn btn-primary cta-action" @click="removeFromCart" :disabled="displayItem.cart <= 0">
-                    -
-                </button>
-
+                <button
+                    class="btn btn-default cta-action"
+                    @click="removeFromCart"
+                    :disabled="displayItem.cart <= 0"
+                    >-</button>
                 <span v-if="displayItem.cart <= 0">Add to Cart</span>
-                <span  v-if="displayItem.cart > 0"> {{displayItem.cart}} items in Cart</span>
-
-                <button class="btn btn-primary cta-action" @click="addToCart"  :disabled="displayItem.cart >= (displayItem.maxCount || 10)">
-                    +
-                </button>
+                <span class="font-weight-bold"  v-if="displayItem.cart > 0"> {{displayItem.cart}} items in Cart</span>
+                <button
+                    class="btn btn-default cta-action"
+                    @click="addToCart"
+                    :disabled="displayItem.cart >= (displayItem.maxCount || 10)"
+                    >+</button>
             </div>
         </div>
     </div>

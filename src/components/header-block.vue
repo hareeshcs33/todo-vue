@@ -2,7 +2,7 @@
     <div class="header-block">
         <div class="header-content">
             <div class="hd-left-side">
-                <div class="logo">Logo</div>
+                <div class="logo">Natural Farms</div>
                 <div class="cart-value">
                     <img src="../images/shopping-cart.svg"/> 
                     <span class="cart-number">{{cartValue}}</span></div>
@@ -69,7 +69,7 @@ export default {
 .cart-number {
     color: #fff;
     font-size: 10px;
-    background-color: green;
+    background-color: #ff5300;
     padding: 4px;
     width: 18px;
     height: 18px;

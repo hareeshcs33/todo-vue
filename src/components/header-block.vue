@@ -5,8 +5,9 @@
                 <div class="logo">Natural Farms</div>
                 <div class="cart-value">
                     <img src="../images/shopping-cart.svg"/> 
-                    <span class="cart-number">{{cartValue}}</span></div>
+                    <span class="cart-number">{{cartValue}}</span>
                 </div>
+            </div>
             <div class="hd-right-side">
                 <a href="#" class="login">Login</a>
             </div>

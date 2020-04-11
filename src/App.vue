@@ -1,15 +1,14 @@
 <template>
   <div id="app">
     <div class="app-page">
-      <h1>Online shopping cart</h1>
-
+      <display-todo-layout></display-todo-layout>
       <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-
+import DisplayTodoLayout from '@/components/display-todo-layout.vue'
 export default {
   name: 'App',
   data() {
@@ -18,7 +17,7 @@ export default {
     }
   },
   components: {
-
+    DisplayTodoLayout,
   }
 }
 </script>

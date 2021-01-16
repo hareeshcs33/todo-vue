@@ -9,7 +9,13 @@
                 </div>
             </div>
             <div class="hd-right-side">
-                <a href="#" class="login">Login</a>
+                <div v-if="!userLogined">
+                    <router-link to="/login" class="login">Login</router-link> |
+                    <router-link to="/register" class="login">Sign Up</router-link>
+                </div>
+                <div v-else>
+                    <router-link to="/profile">Profile</router-link>
+                </div>
             </div>
         </div>
     </div>
@@ -22,7 +28,8 @@ export default {
     },
     data() {
         return {
-            cartValue: 0
+            cartValue: 0,
+            userLogined: false,
         }
     },
     mounted () {
